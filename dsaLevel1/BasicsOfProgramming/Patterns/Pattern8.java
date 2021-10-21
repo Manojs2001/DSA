@@ -5,7 +5,7 @@ package nados.dsaLevel1.BasicsOfProgramming.Patterns;
 
 import java.util.Scanner;
 
-public class Pattern2 {
+public class Pattern8 {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
@@ -13,10 +13,11 @@ public class Pattern2 {
 		int n = scn.nextInt();
 
 		for (int i = 1; i <= n; i++) {
-			for (int j = n; j >= i; j--) {
-				System.out.print("*\t");
+			for (int j = n - 1; j >= i; j--) {
+				System.out.print("\t");
 			}
-			System.out.println();
+			
+			System.out.println("*");
 		}
 
 	}
